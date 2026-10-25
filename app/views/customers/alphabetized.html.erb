@@ -1,0 +1,14 @@
+<section class="section">
+  <h1 class="title">Customers A to Z</h1>
+
+  <p class="mb-4">
+    <%= link_to "All Customers", root_path, class: "button is-link" %>
+    <%= link_to "Missing Email", customers_missing_email_path, class: "button is-warning" %>
+  </p>
+
+  <div class="columns is-multiline">
+    <% @customers.each do |customer| %>
+      <%= render "customers/customer", customer: customer %>
+    <% end %>
+  </div>
+</section>
