@@ -1,24 +1,14 @@
-# README
+# CRM
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+simple customer relation manager built with rails.
 
-Things you may want to cover:
+- customers with name, phone, email, notes and an image
+- admin panel at /admin (activeadmin)
+- pages: / , /customers/alphabetized , /customers/missing_email
 
-* Ruby version
+run it:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+bundle install
+rails db:migrate
+rails db:seed
+rails s
