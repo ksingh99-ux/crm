@@ -1,0 +1,14 @@
+<div class="column is-one-quarter">
+  <div class="card">
+    <div class="card-content">
+      <p class="title is-5"><%= customer.full_name %></p>
+
+      <% if customer.image.attached? %>
+        <%= image_tag customer.image, class: "customer-image" %>
+      <% end %>
+
+      <p class="customer-info"><%= customer.phone_number %></p>
+      <p class="customer-info"><%= customer.email_address %></p>
+    </div>
+  </div>
+</div>

@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+.customer-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.customer-info {
+  margin-bottom: 10px;
+}
